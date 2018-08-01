@@ -134,9 +134,15 @@ $ terraform output ip
 ```
 
 ### Modules
-
+* [Terraform Module Registry](https://registry.terraform.io/)
+* `$ terraform init -upgrade`
+* https://registry.terraform.io/modules/hashicorp/consul/aws/0.3.5
 
 ### Remote Backends
+
+
+
+
 ### Next Steps
 
 
@@ -169,4 +175,4 @@ serverless login
 https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html  
 https://www.terraform.io/docs/providers/aws/r/lambda_function.html  
 
-
+https://registry.terraform.io/
