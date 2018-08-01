@@ -121,10 +121,23 @@ resource "aws_instance" "example" {
 $ terraform apply -var 'amis={ us-east-1 = "foo", us-west-2 = "bar" }'
 ```
 
+### Output Variables
+```bash
+$ terraform apply
+# ...
+# Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+# Outputs:
+#  ip = 50.17.232.209
+
+$ terraform output ip
+# 50.17.232.209
+```
+
+### Modules
 
 
-
-
+### Remote Backends
+### Next Steps
 
 
 
