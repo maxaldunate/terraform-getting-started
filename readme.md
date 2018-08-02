@@ -139,40 +139,27 @@ $ terraform output ip
 * https://registry.terraform.io/modules/hashicorp/consul/aws/0.3.5
 
 ### Remote Backends
-
-
-
+* Run Terraform in a remote environment with shared access to state
+* Configure the backend in your configuration file
+```bash
+terraform {
+  backend "consul" {
+    address = "demo.consul.io"
+    path    = "getting-started-RANDOMSTRING"
+    lock    = false
+    scheme  = "https"
+  }
+}
+```
+* [Terraform Enterprise ](https://www.hashicorp.com/products/terraform?utm_source=oss&utm_medium=getting-started&utm_campaign=terraform)
+* Although Terraform Enterprise can act as a standard remote backend to support Terraform runs on local machines, it works even better as a remote run environment
+* Supports two main workflows
+  - A VCS-driven workflow
+  - API-driven workflow
 
 ### Next Steps
+* [Documentation](https://www.terraform.io/docs/index.html)
+* [Examples](https://www.terraform.io/intro/examples/index.html)
+* [Import](https://www.terraform.io/docs/import/index.html)
 
-
-
-
-
-
-
-
-
-## Para ver luego ...
-
-* [Serverless Platform](https://serverless.com/)
-  - [Serverless framework](https://serverless.com/framework/)
-  - [Serverless event gateway](https://serverless.com/event-gateway/)
-  - [Serverless dashboard](https://serverless.com/dashboard/)
-
-* [Getting Started with Serverless](https://serverless.com/framework/docs/getting-started/)  
-  Providers ...
-
-```bash
-npm install -g serverless
-
-# Optional
-serverless login 
-```
-
-
-## Apply to ses & max-pro
-https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api.html  
-https://www.terraform.io/docs/providers/aws/r/lambda_function.html  
-
-https://registry.terraform.io/
+The End
